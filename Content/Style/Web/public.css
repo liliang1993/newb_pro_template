@@ -141,6 +141,16 @@ a:hover{color: #fed735}
   height: 31px;
   background-position: 0 -362px;
 }
+.icon_username{
+  width: 20px;
+  height: 24px;
+  background-position: 0 -268px;
+}
+.icon_password{
+  width: 20px;
+  height: 24px;
+  background-position: -33px -268px;
+}
 /*公共头部 start*/
 .m_head {
   width: 100%;
