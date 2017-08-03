@@ -288,7 +288,6 @@ a:hover{color: #fed735}
   font-size: 14px;
 }
 .m_footer .footerone .ftone_right {
-  width: 196px;
   margin-left: 58px;
   padding-top: 11px;
 }
@@ -311,11 +310,7 @@ a:hover{color: #fed735}
   height: 16px;
   background-position: 0 -546px;
 }
-.m_footer .footerone .ftone_right p i.icon_tel {
-  width: 24px;
-  height: 24px;
-  background-position: 0 -593px;
-}
+
 .m_footer .footerone .ftone_right p i.icon_support {
   width: 24px;
   height: 24px;
