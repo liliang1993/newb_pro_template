@@ -29,40 +29,13 @@
   line-height: 50px;
   color: #fff;
 }
-.content .header .header-t .nav ul .nav_menu .nav_tit i {
-  vertical-align: middle;
-}
-.content .header .header-t .nav ul .nav_menu .nav_tit i.icon-real {
-  display: inline-block;
-  width: 20px;
-  height: 21px;
-  background-position: 0 -54px;
-}
-.content .header .header-t .nav ul .nav_menu .nav_tit i.icon-login {
-  display: inline-block;
-  width: 16px;
-  height: 17px;
-  background-position: 0 -96px;
-}
-.content .header .header-t .nav ul .nav_menu .nav_tit i.icon-service {
-  display: inline-block;
-  width: 25px;
-  height: 20px;
-  background-position: 0 -136px;
-}
-.content .header .header-t .nav ul .nav_menu .nav_tit i.icon-menu {
-  display: inline-block;
-  width: 27px;
-  height: 21px;
-  background-position: 0 -172px;
-}
 .content .header .header-t .nav ul .nav_menu .nav_list {
   padding-top: 12px;
   height: 182px;
   background-color: #666f87;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-  border-left: 1px solid #858c9f;
+  border-right: 1px solid #858c9f;
 }
 .content .header .header-t .nav ul .nav_menu .nav_list ul li {
   height: 36px;
@@ -80,6 +53,70 @@
 .content .header .header-t .nav ul .nav_menu:hover .nav_list {
   display: block;
 }
+.content .header .header-t .nav ul .nav_shortcut {
+  width: 200px;
+  float: left;
+  height: 50px;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_shortcut_ul {
+  padding: 14px 0;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_shortcut_ul li {
+  float: left;
+  height: 22px;
+  margin-left: 25px;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_shortcut_ul li .shourtcut_link .icon1 {
+  display: inline-block;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_shortcut_ul li .shourtcut_link:hover .icon_reg_1 {
+  background-position: -41px -54px;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_shortcut_ul li .shourtcut_link:hover .icon_login_1 {
+  background-position: -41px -95px;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_shortcut_ul li .shourtcut_link:hover .icon_support_1 {
+  background-position: -41px -136px;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_list {
+  width: 200px;
+  height: 162px;
+  padding-top: 20px;
+  background-color: #666f87;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_list .shoutcut_con {
+  margin: 0 auto;
+  width: 158px;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_list .shoutcut_con .shoutcut_con_item {
+  margin-bottom: 18px;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_list .shoutcut_con .shoutcut_con_item .shortcut_btn {
+  display: block;
+  position: relative;
+  color: #fff;
+  font-size: 16px;
+  width: 158px;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+  border-radius: 16px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+.content .header .header-t .nav ul .nav_shortcut .nav_list .shoutcut_con .shoutcut_con_item .shortcut_btn .icon_wrap {
+  display: inline-block;
+  width: 25px;
+  height: 22px;
+  text-align: text;
+  padding-left: 15px;
+}
 .content .banner {
   width: 100%;
   height: 720px;
@@ -87,20 +124,20 @@
   background: #000;
   min-width: 1200px;
 }
-.content .banner .banner_bd {
+.content .banner .banner_hd {
   width: 100%;
   height: 720px;
   position: relative;
   overflow: hidden;
   min-width: 1100px;
 }
-.content .banner .banner_bd ul {
+.content .banner .banner_hd ul {
   position: relative;
   width: 100%;
   height: 720px;
   min-width: 1100px;
 }
-.content .banner .banner_bd ul li {
+.content .banner .banner_hd ul li {
   background: url(../../Images/banner.jpg) center center no-repeat;
   position: absolute;
   left: 0px;
@@ -108,7 +145,7 @@
   width: 100%;
   min-width: 1920px;
 }
-.content .banner .banner_bd ul li a {
+.content .banner .banner_hd ul li a {
   display: block;
   height: 720px;
   text-align: center;
@@ -116,9 +153,33 @@
   position: relative;
   z-index: 10;
 }
+.content .banner .banner_bd {
+  position: relative;
+  margin-top: -100px;
+  height: 14px;
+  width: 100%;
+  z-index: 11;
+}
+.content .banner .banner_bd ul {
+  width: 100%;
+  text-align: center;
+  height: 14px;
+}
+.content .banner .banner_bd ul li {
+  width: 14px;
+  height: 14px;
+  display: inline-block;
+  margin: 0 3px;
+  cursor: pointer;
+  border-radius: 50%;
+  background-color: rgba(97, 106, 110, 0.6);
+}
+.content .banner .banner_bd ul li.on {
+  background-color: #fed735;
+}
 .content .new_box {
   background-color: rgba(97, 106, 110, 0.6);
-  height: :50px;
+  height: 50px;
   width: 100%;
   position: absolute;
   top: 670px;
@@ -398,8 +459,7 @@
   background-color: #e4c132;
 }
 .content .three_wrap {
-  height: 557px;
-  padding-top: 20px;
+  margin-top: 20px;
 }
 .content .three_wrap .fx_box_title {
   width: 664px;
@@ -410,6 +470,7 @@
 .content .three_wrap .fx_box_title h2 {
   color: #3c4049;
   line-height: 56px;
+  font-weight: normal;
 }
 .content .three_wrap .fx_box_wd .fx_wd_li {
   width: 586px;
@@ -487,6 +548,7 @@
   min-width: 1200px;
 }
 .rate_wrap .rate_tab table thead th {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   width: 400px;
   height: 40px;
@@ -497,6 +559,7 @@
   border-left: 1px solid #ccc;
 }
 .rate_wrap .rate_tab table tbody tr td {
+  -webkit-box-sizing: border-box;
   box-sizing: border-box;
   height: 40px;
   line-height: 40px;
@@ -528,7 +591,8 @@
 }
 .m_title_box h2 {
   height: 42px;
-  text-indent: 9999em;
+  width: 100%;
+  text-indent: 9999;
 }
 .m_title_box .box_hd_txt {
   line-height: 34px;
@@ -787,6 +851,14 @@
 }
 .contus_box_con .contus_box_con_ul {
   width: 915px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
 }
 .contus_box_con .contus_box_con_ul li {
   float: left;
@@ -807,6 +879,7 @@
   top: 50%;
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
 .contus_box_con .contus_box_con_ul li .emil_icon {
@@ -901,4 +974,35 @@
 .hy_table_w .hy_table tbody .crude_tr {
   height: 141px;
   background-color: #eeeded;
+}
+.invest_portal_box .box_hd {
+  height: 24px;
+  line-height: 24px;
+  width: 100%;
+  margin-bottom: 31px;
+}
+.invest_portal_box .box_hd h2 {
+  font-weight: normal;
+  font-size: 24px;
+  color: #262d3f;
+  width: 360px;
+  margin: 0 auto;
+}
+.invest_portal_box .box_con + div.box_con {
+  margin-top: 38px;
+}
+.invest_portal_box .box_con h3 {
+  color: #ff6000;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 32px;
+}
+.invest_portal_box .box_con em,
+.invest_portal_box .box_con p {
+  font-size: 14px;
+  line-height: 32px;
+  color: #666;
+}
+.invest_portal_box .box_con em {
+  font-weight: bold;
 }

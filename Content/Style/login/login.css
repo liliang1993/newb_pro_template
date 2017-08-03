@@ -17,21 +17,14 @@
 .content .login_box .login_box_hd {
   padding-top: 43px;
 }
-.content .login_box .login_box_hd .icon_logo {
-  width: 223px;
-  height: 36px;
-  background-position: 0 0;
-}
 .content .login_box form {
-  padding-top: 20px;
+  padding-top: 47px;
   padding-left: 80px;
 }
-.content .login_box form .m_form_ul li {
-  margin-top: 7px;
-}
-.content .login_box form .m_form_ul li em {
-  line-height: 58px;
+.content .login_box form .m_form_ul li p {
+  line-height: 24px;
   font-size: 18px;
+  margin-bottom: 17px;
 }
 .content .login_box form .m_form_ul li .login_text_div .login_text {
   padding: 0 50px 0 20px;
@@ -56,9 +49,15 @@
 .content .login_box form .m_form_ul li .text_ts a {
   color: #fff;
 }
+.content .login_box form .m_form_ul li .err {
+  color: #dd0000;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+}
 .content .login_box form .m_form_ul li.last_login_li {
   height: 46px;
-  margin-top: 33px;
+  margin-top: 9px;
 }
 .content .login_box form .m_form_ul li.last_login_li .m_form_btn {
   font-size: 20px;
